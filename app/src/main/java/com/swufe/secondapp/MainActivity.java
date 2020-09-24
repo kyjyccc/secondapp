@@ -7,19 +7,22 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-      TextView text;
-      EditText edit;
+      TextView out;
+      EditText inp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        text = findViewById(R.id.out);
-        edit = findViewById(R.id.inp);
+        out = findViewById(R.id.out);
+        inp = findViewById(R.id.inp);
     }
 
     public void btn(View v){
-        String str = edit.getText().toString();
-        text.setText("Hi~" + str);
+        String str1 = inp.getText().toString();
+        Double a = Double.parseDouble(str1);
+        Double b = a*1.8+32.0;
+        String str2 = String.valueOf(b);
+        out.setText("华氏温度为：" + str2);
     }
 }

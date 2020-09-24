@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">第二个应用</string>
-    <string name="edittext1">请输入摄氏温度</string>
+    <string name="edit_text1">请输入摄氏温度</string>
     <string name="button1">转换</string>
     <string name="text2">华氏温度为</string>
 </resources>
